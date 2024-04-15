@@ -9,10 +9,10 @@ class ImageController extends Controller
 {
     public function show($imageName)
     {
-        $path = storage_path("app/public/images/{$imageName}");
+        $path = storage_path("/images/{$imageName}");
 
-        if (!Storage::exists("public/images/{$imageName}"))
-        {
+        if (!Storage::exists("/images/{$imageName}"))
+
             abort(404);
         }
 
