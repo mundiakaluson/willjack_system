@@ -7,9 +7,13 @@
         <title>{{ $title ?? 'Page Title' }}</title>
         @vite('resources/css/app.css')
     </head>
-    <body>
-        @livewire('navbar')
-        {{ $slot }}
-        Footer
+    <body class="flex flex-col h-screen">
+        <div class="mb-auto flex-grow">
+            @livewire('navbar')
+                {{ $slot }}
+            <div class="sticky top-[100vh]">
+                @livewire('footer')
+            </div>
+        </div>
     </body>
 </html>
