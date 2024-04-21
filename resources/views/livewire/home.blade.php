@@ -1,4 +1,3 @@
 <div>
-    Home
-    {{-- Success is as dangerous as failure. --}}
+    <livewire:hero />
 </div>
