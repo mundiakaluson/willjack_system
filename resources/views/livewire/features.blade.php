@@ -1,5 +1,5 @@
 <div>
-        <section class="bg-white dark:bg-gray-900 lg:shadow-md hover:shadow-slate-500/50 transition transition-all delay-300 rounded-full border-slate-500 mt-10">
+        <section class="bg-white dark:bg-gray-900 lg:shadow-md hover:shadow-slate-500/50 transition transition-all delay-200 duration-1000 rounded-full border-slate-500 mt-10">
         <div class="container px-6 py-10 mx-auto">
             <div class="lg:flex lg:items-center">
                 <div class="w-full space-y-12 lg:w-1/2 ">
