@@ -1,4 +1,5 @@
 <div>
     <livewire:hero />
-    <livewire:features />
+    <livewire:hero />
+    <livewire:featured-properties />
 </div>
