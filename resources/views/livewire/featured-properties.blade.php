@@ -1,5 +1,5 @@
 <div>
-    <div class="hover:bg-gradient-to-b from-white from-30% via-slate-100 to-gray-100 transition ease-in-out delay-200  border-slate-500 mt-10">
+    <div class="bg-white bg-gradient-to-b from-white from-60% via-slate-200 to-gray-200 transition-all duration-700 delay-100 rounded-lg bg-size-200 bg-pos-0 hover:bg-pos-100 border-slate-500 mt-10">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900">Featured Properties</h2>
 
