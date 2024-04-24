@@ -1,8 +1,8 @@
 <nav x-data="{ isOpen: false }" class="relative bg-white dark:bg-gray-800">
     <div class="container px-6 py-8 mx-auto md:flex">
         <div class="flex items-center justify-between">
-            <a href="#" class="w-full h-full">
-                <img class="w-full h-full sm:h-7" src="{{ url('images/WJ.png') }}" alt="">
+            <a href="#" class="lg:w-full lg:h-full">
+                <img class="lg:w-full lg:h-8" src="{{ url('images/WJ.png') }}" alt="">
             </a>
 
             <!-- Mobile menu button -->
