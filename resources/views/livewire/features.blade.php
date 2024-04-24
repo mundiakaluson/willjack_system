@@ -72,19 +72,19 @@
 
             <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                 <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
-                    <img class="h-20" src="{{ url('images/msa_logo.png') }}"/>
+                    <img class="h-16 w-auto" src="{{ url('images/msa_logo.png') }}"/>
                 </div>
 
                 <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
-                    <img class="h-16" src="{{ url('images/kilifi_logo.png') }}" />
+                    <img class="h-16 w-auto" src="{{ url('images/kilifi_logo.png') }}" />
                 </div>
 
                 <div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
-                    <img class="h-20" src="{{ url('images/gok_logo.png') }}" />
+                    <img class="h-16 w-auto" src="{{ url('images/gok_logo.png') }}" />
                </div>
 
                 <div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
-                    <img class="h-20" src="{{ url('images/zurion_logo.png') }}" />
+                    <img class="h-16 w-auto" src="{{ url('images/zurion_logo.png') }}" />
                 </div>
 
                 <div class="flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-1">
