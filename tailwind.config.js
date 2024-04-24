@@ -15,7 +15,7 @@ export default {
             'pos-100': '100% 100%',
         },
         gridTemplateRows: {
-            '[auto, auto, 1fr]': 'auto auto 1fr'
+            '[auto, auto, 1fr]': 'auto auto 1fr',
         },
 
     },
