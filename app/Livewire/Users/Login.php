@@ -21,7 +21,7 @@ class Login extends Component
             'email' => $this->form->email,
             'password' => $this->form->password
         ]);
-        dd($this->form->email);
+        dd($credentials);
         $this->flash('question', 'Alert',
             [
                 'position' => 'bottom-start',
