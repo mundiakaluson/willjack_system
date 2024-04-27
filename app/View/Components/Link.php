@@ -12,8 +12,9 @@ class Link extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public string $linkRoute,
+        public ?string $linkRoute = null,
         public string $linkName,
+        public ?string $livewireLink = null,
     )
     {
       //

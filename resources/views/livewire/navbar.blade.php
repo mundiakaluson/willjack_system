@@ -24,12 +24,18 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
-            @if (!Auth::guest())
-            <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
-                <x-link link-route="#" link-name="Home" />
-                <x-link link-route="#" link-name="About" />
-                <x-link link-route="#" link-name="Contact" />
-            </div>
+            @if (Auth::guest())
+                <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
+                    <x-link link-route="#" link-name="Home" />
+                    <x-link link-route="#" link-name="About" />
+                    <x-link link-route="#" link-name="Contact" />
+                </div>
+            @else
+                <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
+                    <x-link link-route="#" link-name="Logged in as: {{ Auth::user()->first_name }}" />
+                    <x-link link-route="#" link-name="Profile" />
+                    <livewire:logout />
+                </div>
             @endif
 
             <div class="relative mt-4 md:mt-0">
