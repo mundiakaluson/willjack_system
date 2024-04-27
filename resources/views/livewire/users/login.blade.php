@@ -7,9 +7,9 @@
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form class="space-y-6" wire:submit="logon" method="POST">
           <div>
-            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email Address</label>
             <div class="mt-2">
-              <input id="email" name="email" wire:model="form.email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6">
+                        <input id="email" name="email" wire:model="form.email" type="email" class="block w-full rounded-md border-0 p-2 text-gray-900 ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6">
             </div>
             <div>
                     @error('form.email')<span class="text-xs text-red-500 transition transition-all"> {{ $message }}</span>@enderror
@@ -24,7 +24,7 @@
               </div>
             </div>
             <div class="mt-2">
-              <input id="password" wire:model="form.password" name="password" type="password" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+              <input id="password" wire:model="form.password" name="password" type="password" class="block w-full rounded-md border-0 p-2 text-gray-900 ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-slate-500 sm:text-sm sm:leading-6">
             </div>
             @error('form.password')<span class="text-xs text-red-500 transition transition-all"> {{ $message }}</span>@enderror
           </div>
