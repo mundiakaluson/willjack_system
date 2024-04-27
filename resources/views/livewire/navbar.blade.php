@@ -24,11 +24,13 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-between">
+            @if (!Auth::guest())
             <div class="flex flex-col px-2 -mx-4 md:flex-row md:mx-10 md:py-0">
-                <a href="#" class="px-2.5 py-2 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-blue-300 dark:hover:bg-gray-700 md:mx-2">Home</a>
-                <a href="#" class="px-2.5 py-2 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-blue-300 dark:hover:bg-gray-700 md:mx-2">About</a>
-                <a href="#" class="px-2.5 py-2 text-gray-700 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-blue-300 dark:hover:bg-gray-700 md:mx-2">Contact</a>
+                <x-link link-route="#" link-name="Home" />
+                <x-link link-route="#" link-name="About" />
+                <x-link link-route="#" link-name="Contact" />
             </div>
+            @endif
 
             <div class="relative mt-4 md:mt-0">
                 <span class="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -39,6 +41,7 @@
 
                 <input type="text" class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Search Properties">
             </div>
+
+            </div>
         </div>
-    </div>
 </nav>
