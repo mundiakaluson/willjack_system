@@ -11,9 +11,13 @@
         <div class="mb-auto flex-grow">
             @livewire('navbar')
                 {{ $slot }}
-            <div class="sticky top-[100vh]">
-                @livewire('footer')
-            </div>
+                <div class="sticky top-[100vh]">
+                    @livewire('footer')
+                </div>
         </div>
+        @livewireScripts
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <x-livewire-alert::scripts />
+
     </body>
 </html>

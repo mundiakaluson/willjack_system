@@ -4,8 +4,9 @@
         <h2 class="mt-10 text-center text-2xl font-semibold leading-9 tracking-tight text-gray-900">Welcome Back</h2>
       </div>
 
+      <button wire:click="logon">Test</button>
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form class="space-y-6" action="#" method="POST">
+        <form class="space-y-6" wire:submit="logon" method="POST">
           <div>
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
             <div class="mt-2">
