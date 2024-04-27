@@ -3,7 +3,8 @@
         <div class="items-center justify-between flex flex-col">
             <div class="flex sm:justify-center pb-4">
                 <a href="#" class="w-full h-full">
-                    <img class="w-auto h-10" src="{{ url('images/WJ.png') }}" alt="">
+                    <img class="hidden lg:block w-auto h-10" src="{{ url('images/WJ.png') }}" alt="">
+                    <img class="lg:hidden w-auto h-10" src="{{ url('images/wj2.png') }}" alt="">
                 </a>
             </div>
 
