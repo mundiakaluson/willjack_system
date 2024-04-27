@@ -1,10 +1,11 @@
 <footer class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col items-center text-center">
-            <a href="#" class="w-full h-full">
+            <a href="#">
                 <img class="hidden lg:block w-auto h-10" src="{{ url('images/WJ.png') }}" alt="">
                 <img class="lg:hidden w-auto h-10" src="{{ url('images/wj2.png') }}" alt="">
             </a>
+
             <div class="flex flex-wrap justify-center mt-6 -mx-4">
                 <a href="#" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-300 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Home </a>
 
