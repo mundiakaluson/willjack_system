@@ -7,11 +7,9 @@ use Livewire\Form;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
-use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class LoginForm extends Form
 {
-    use LivewireAlert;
     #[Validate('required')]
     public $email = '';
 
@@ -19,6 +17,7 @@ class LoginForm extends Form
     public $password = '';
 
     public $credentials = [];
+    public $response;
 
     public function authenticate()
     {
@@ -28,13 +27,13 @@ class LoginForm extends Form
         ];
 
         $this->validate();
-        $response = Auth::attempt($this->credentials);
-        if ($response){
-            #request()->session()->regenerate();
-            dd("OK");
+        $this->response = Auth::attempt($this->credentials);
+        if ($this->response){
+            request()->session()->regenerate();
+            return redirect()->intended('/');
         } else
         {
-            dd("Denied");
+            $this->reset();
         }
     }
 }
