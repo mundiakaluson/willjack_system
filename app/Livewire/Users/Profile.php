@@ -9,7 +9,7 @@ use Livewire\Attributes\Title;
 class Profile extends Component
 {
     #[Title('Profile')]
-    #[Layout('components.layout.app')]
+    #[Layout('components.layouts.app')]
     public function render()
     {
         return view('livewire.users.profile');

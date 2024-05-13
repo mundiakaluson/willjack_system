@@ -12,5 +12,5 @@ Route::get('/images/{imageName}', [ImageController::class, 'show'])->name('image
 Route::get('/property', PropertyDetails::class)->name('property.details');
 Route::get('/properties', Properties::class)->name('properties');
 Route::get('/team/login', Login::class)->name('users.login');
-Route::get('/user/profile', Profile::class)->name('users.profile');
+Route::get('/users/profile', Profile::class)->name('users.profile');
 
