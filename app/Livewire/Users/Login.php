@@ -10,7 +10,6 @@ use Jantinnerezo\LivewireAlert\LivewireAlert;
 
 class Login extends Component
 {
-
     use LivewireAlert;
     public LoginForm $form;
     public function logon()
